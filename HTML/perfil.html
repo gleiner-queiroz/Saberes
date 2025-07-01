@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Saberes</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Saberes</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#disciplinas">Disciplinas</a></li>
+                <li><a href="index.html#sobre">Sobre Nós</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar disciplinas...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <a href="perfil.html" class="profile-btn"><i class="fas fa-user-circle"></i> Perfil</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section-profile">
+            <h1 class="section-title">Meu Perfil</h1>
+            <form id="perfil-form" class="profile-form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" value="Nome do Usuário">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" value="usuario@email.com" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" value="(XX) XXXXX-XXXX">
+                </div>
+                
+                <div class="form-group user-type aluno-fields">
+                    <label for="serie">Série:</label>
+                    <input type="text" id="serie" value="2º Ano">
+                </div>
+
+                <div class="form-group user-type professor-fields" style="display: none;">
+                    <label for="formacao">Formação:</label>
+                    <input type="text" id="formacao" value="Licenciatura em Química">
+                </div>
+                <div class="form-group user-type professor-fields" style="display: none;">
+                    <label for="materia">Matéria que atua:</label>
+                    <input type="text" id="materia" value="Química">
+                </div>
+                
+                <div class="form-group">
+                    <label for="bio">Biografia:</label>
+                    <textarea id="bio" rows="5">Escreva sua biografia aqui.</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-type-select">Tipo de Usuário:</label>
+                    <select id="user-type-select">
+                        <option value="aluno">Aluno</option>
+                        <option value="professor">Professor</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="save-btn">Salvar Alterações</button>
+                <a href="cadastro-conteudo.html" id="professor-area-btn" class="save-btn" style="display: none;">Área do Professor</a>
+            </form>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p>&copy; 2025 Saberes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/JS/perfil.js"></script>
+</body>
+</html>
