@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mockConteudos = {
         '1': {
             titulo: 'Equações de 2º Grau: Teoria e Resolução',
-            professor: 'Prof. João',
+            professor: 'Prof. Manoel',
             texto: `As equações de 2º grau são expressões matemáticas do tipo $ax^2 + bx + c = 0$, onde $a$, $b$ e $c$ são coeficientes reais e $a \\neq 0$. Elas são fundamentais em diversas áreas da matemática e física.
             <br><br>
             A forma mais comum de resolver uma equação de 2º grau é utilizando a Fórmula de Bhaskara:
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         '2': {
             titulo: 'Progressão Aritmética e Geométrica: Conceitos Essenciais',
-            professor: 'Prof. João',
+            professor: 'Prof. Manoel',
             texto: `**Progressão Aritmética (PA):** É uma sequência numérica em que cada termo, a partir do segundo, é igual ao anterior somado a uma constante chamada razão (r).
             <br>Exemplo: $(2, 5, 8, 11, ...)$ onde $r=3$.
             <br>Fórmula do termo geral: $a_n = a_1 + (n-1)r$

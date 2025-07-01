@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Dados de exemplo para o conteúdo de uma matéria
     const conteudos = [
-        { titulo: 'Equações de 2º Grau', professor: 'Prof. João', url: 'conteudo.html?id=1' },
-        { titulo: 'Progressão Aritmética e Geométrica', professor: 'Prof. João', url: 'conteudo.html?id=2' },
-        { titulo: 'Funções Trigonométricas', professor: 'Prof. Maria', url: 'conteudo.html?id=3' },
-        { titulo: 'Geometria Espacial', professor: 'Prof. Carlos', url: 'conteudo.html?id=4' },
-        { titulo: 'Logaritmos', professor: 'Prof. João', url: 'conteudo.html?id=5' },
+        { titulo: 'Equações de 2º Grau', professor: 'Prof. Manoel', url: 'conteudo.html?id=1' },
+        { titulo: 'Progressão Aritmética e Geométrica', professor: 'Prof. Manoel', url: 'conteudo.html?id=2' },
+        { titulo: 'Funções Trigonométricas', professor: 'Prof. Manoel', url: 'conteudo.html?id=3' },
+        { titulo: 'Geometria Espacial', professor: 'Prof. Manoel', url: 'conteudo.html?id=4' },
+        { titulo: 'Logaritmos', professor: 'Prof. Manoel', url: 'conteudo.html?id=5' },
     ];
 
     function renderConteudos(conteudosArray) {
