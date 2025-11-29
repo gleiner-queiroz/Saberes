@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Saberes - Painel do Professor</title>
+  <script src="../JS/dashboard.js"></script>
+  <link rel="stylesheet" href="../CSS/dashboard.css">
+  
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Saberes</h1>
+    <span id="profInfo">Carregando...</span>
+  </div>
+  <div>
+    <button onclick="sair()">Sair</button>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- Lado esquerdo: lista + cadastro de conteúdo -->
+  <div>
+    <div class="card">
+      <h2>Meus conteúdos</h2>
+      <div style="display:flex; gap:8px; margin-bottom:8px;">
+        <input id="buscaConteudo" type="text" placeholder="Buscar por título...">
+        <button class="secondary" style="max-width:120px;" onclick="carregarMeusConteudos()">Buscar</button>
+      </div>
+      <div class="lista-conteudos" id="listaConteudos">
+        <!-- preenchido via JS -->
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Novo conteúdo</h2>
+      <input id="ctTitulo" type="text" placeholder="Título do conteúdo">
+      <input id="ctMateria" type="text" placeholder="Matéria">
+      <input id="ctSerie" type="text" placeholder="Série (ex: 1º ano)">
+      <textarea id="ctTexto" rows="5" placeholder="Texto do conteúdo"></textarea>
+      <textarea id="ctImagens" rows="2" placeholder="URLs de imagens (separadas por vírgula)"></textarea>
+      <textarea id="ctVideos" rows="2" placeholder="URLs de vídeos (separadas por vírgula)"></textarea>
+      <textarea id="ctLinks" rows="2" placeholder="Outros links úteis (separadas por vírgula)"></textarea>
+      <button onclick="salvarConteudo()">Salvar conteúdo</button>
+      <div id="msgConteudo"></div>
+    </div>
+  </div>
+
+  <!-- Lado direito: chat -->
+  <!--
+  <div>
+    <div class="card">
+      <h2>Chat com alunos</h2>
+      <p id="chatTituloConteudo">Selecione um conteúdo para ver as mensagens.</p>
+      <div class="chat-mensagens" id="chatMensagens"></div>
+      <textarea id="chatTexto" rows="3" placeholder="Responder aluno..."></textarea>
+      <button onclick="enviarResposta()">Enviar resposta</button>
+      <div id="msgChat"></div>
+    </div>
+  </div>
+-->
+
+</div>
+
+</body>
+</html>
