@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Saberes - Cadastro Professor</title>
+  <script src="../JS/cadastro.js" defer></script>
+  <link rel="stylesheet" href="../CSS/cadastro.css">
+</head>
+<body>
+
+<div class="card">
+  <h1>Saberes</h1>
+  <h3 style="text-align:center;margin-top:0;">Cadastro de Professor</h3>
+
+  <input id="cadNome" type="text" placeholder="Nome completo">
+  <input id="cadEmail" type="email" placeholder="E-mail">
+  <input id="cadSenha" type="password" placeholder="Senha">
+  <input id="cadMateria" type="text" placeholder="Matéria">
+  <input id="cadFormacao" type="text" placeholder="Formação (Mestrado, Doutorado...)">
+  <input id="cadSerie" type="text" placeholder="Série que dá aula (ex: 1º ano)">
+  <button onclick="cadastrarProfessor()">Cadastrar</button>
+
+  <div class="link">
+    Já tem conta? <a href="login.html">Fazer login</a>
+  </div>
+
+  <div id="msg"></div>
+</div>
+
+</body>
+</html>
